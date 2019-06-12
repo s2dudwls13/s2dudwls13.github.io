@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Gaegu|Nanum+Brush+Script|Nanum+Myeongjo|Nanum+Pen+Script|Noto+Sans+KR|Noto+Serif+KR&display=swap" rel="stylesheet">
+	<style type="text/css">
+		h1{
+            background: -webkit-linear-gradient(#d687ff, #0027ff);
+  			-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent;
+			font-family: 'Gaegu', cursive;
+			margin-left: 30px;
+			font-size: 50px;
+			margin-top: 20px;
+            text-align: center;
+        }
+        header{
+			width: 1500px;
+			height: 100px;
+			margin-top: 10px;
+		}
+		nav{
+			width: 1500px;
+			height: 70px;
+			margin-top: 10px;
+		}
+		li{
+			list-style-type: none;
+		}
+		a{
+			text-decoration: none;	
+		}
+		li a{
+			font-family: 'Gaegu', cursive;
+			color: white;
+			font-size: 35px;
+		}
+		#menu{
+			font-family: 'Gaegu', cursive;
+			clear: both;
+			height: 50px;
+			width: 1500px;
+			background-color: rgb(0, 216, 255);
+			color: white;
+			text-align: center;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			font-size: 40px;
+			border-radius: 20px;
+		}
+		.ulalign{
+			margin: 0 70px;
+		}
+		.dropdown{
+			display: inline-block;		/*옆으로 보여짐*/
+		}
+		.dropdownContents{
+			color: white;
+			font-family: sans-serif;
+			display: none;
+			background-color: rgb(0, 216, 255);
+			position: absolute;
+			width: 220px;
+			padding: 12px 16px;
+			border-radius: 20px;
+			margin-left: -95px; 
+			font-size: 15px;
+		}
+		.dropdown:hover .dropdownContents{	/*커서를 가져갔을때 dropdownContents을 보여줌*/
+			display: block;
+		}
+		.clear{
+			clear: both;
+		}
+		.img1{
+			position: absolute;
+			left: 200px;
+			top: 500px;	
+			color:white;
+		}
+		.img2{
+			position: absolute;
+			left: 1350px;
+			top: 500px;	
+			color:white;
+		}
+		.img3{
+			position: absolute;
+			left: 300px;
+			top: 730px;	
+			color:white;
+		}
+		.left{
+			float: left;
+		}
+		.right{
+			float: right;
+			margin-top: 60px;
+		}
+		#logo{
+			background: -webkit-linear-gradient(#d687ff, #0027ff);
+  			-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent;
+			margin-left: 30px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-size: 50px;
+			margin-top: 20px;
+			float: left;
+		}
+		#btn{
+			width: 70px;
+			height: 30px;
+			border-radius: 5px;
+			margin: 10px;
+		}
+		.img{
+			border-radius: 20px;
+			margin-left: 60px;
+			margin-top: 30px;
+		}
+		#page{
+			margin-left: 20px;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<a href="index.html" class="left"><img src="./img/travel.jpg" width="100" height="100"></a>
+		<div id="logo">
+			일본 여행
+		</div>	
+		<div class="right">
+			<input type="text" name ="search"> 
+			<input type="button" value="검색하기" id="btn">	
+		
+	 	</div> <br><br><br><br>
+		<hr>
+	</header>
+
+	<nav id="menu">
+		<div class="dropdown">
+			<ul class="ulalign">도쿄
+				<div class="dropdownContents">
+				<li><a href="asakusa.html">아사쿠사</a></li><br>
+				<li><a href="shinjuku.html">신주쿠</a></li><br>
+				<li><a href="tokyo_tower.html">도쿄 타워</a></li>
+				</div>
+			</ul>
+		</div>
+		<div class="dropdown">
+			<ul class="ulalign">오사카
+				<div class="dropdownContents">
+				<li><a href="osaka1.html">1일차!~!~!~!</a></li><br>
+				<li><a href="osaka2.html">2일차!~!~</a></li><br>
+				<li><a href="osaka3.html">3일차!~!</a></li>
+				</div>
+			</ul>
+		</div>
+		<div class="dropdown">
+			<ul class="ulalign">후쿠오카
+				<div class="dropdownContents">
+				<li><a href="fukuoka1.html">모모치해변</a></li><br>
+				<li><a href="fukuoka2.html">라쿠스이엔</a></li><br>
+				<li><a href="fukuoka3.html">파르코</a></li><br>
+				<li><a href="fukuoka4.html">커낼시티</a></li>
+				</div>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="clear"></div> <!-- float 속성 해제 -->
+
+	<h1>라쿠스이엔</h1>
+	
+	<img src="img/fukuoka/fukuoka7.jpg" class="img" width="300px" height="200px">
+	<img src="img/fukuoka/fukuoka8.jpg" class="img" width="300px" height="200px">
+	<img src="img/fukuoka/fukuoka9.jpg" class="img" width="300px" height="200px">
+	<img src="img/fukuoka/fukuoka10.jpg" class="img" width="300px" height="200px">
+	<img src="img/fukuoka/fukuoka11.jpg" class="img" width="300px" height="200px">
+	<img src="img/fukuoka/fukuoka12.jpg" class="img" width="300px" height="200px">
+
+	<div class="img1">라쿠스이엔 입구</div>
+	<div class="img2">폭포쓰~!</div>
+	<div class="img3">말차뇸</div>
+	<br><br><br>
+
+	<div id="page">
+
+	<h2>볼거리</h2>
+	#작은 정원 #작은 폭포 #물고기들
+
+	<h2>추천 스토리</h2>
+	후쿠오카 라쿠스이엔정원은 입장료를 받습니다!입장료,말차,다식까지하면 300엔정도 라고 합니다 50엔을 더 내면 라쿠스이엔정원 안에 있는 작은 호수에
+	사는 물고기들에게 줄 수 있는 밥도 줍니다! 그리고 정원은 정말 작답니다.. 다 돌아본 다음에 이게 끝이야? 라고 실망을 할수도 있구요 다다미방 한켠에 앉아 말차와 다식을
+	먹으며 여유를 부릴 수 있는 시간을 줍니당! 힐링 하고싶으신 분들이 가시면 정말 좋은거 같아요
+
+	<h2><a href="https://www.google.co.kr/maps/search/%E6%A5%BD%E6%B0%B4%E5%9C%92/@33.5869330,130.4134230,14z">가는길</a></h2>
+	</div><br><br>
+
+[출처] 후쿠오카 라쿠스이엔정원 후기~!|작성자 박팀장 https://blog.naver.com/qkqhtnsdud/221082044082
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <title>신주쿠</title>
+     <link href="https://fonts.googleapis.com/css?family=Gaegu|Nanum+Brush+Script|Nanum+Myeongjo|Nanum+Pen+Script|Noto+Sans+KR|Noto+Serif+KR&display=swap" rel="stylesheet">
+	   <style>
+        h1{
+            background: -webkit-linear-gradient(#d687ff, #0027ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Gaegu', cursive;
+            margin-left: 30px;
+            font-size: 50px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        iframe{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            text-align: center;
+            font-size: 15pt;
+            color: black;
+        }
+		    header{
+			     width: 1500px;
+			     height: 100px;
+			     margin-top: 10px;
+		    }
+        nav{
+          width: 1500px;
+          height: 70px;
+          margin-top: 10px;
+        }
+        a{
+          text-decoration: none;  
+        }
+        li a{
+          font-family: 'Gaegu', cursive;
+          color: white;
+          font-size: 35px;
+        }
+        #menu{
+          font-family: 'Gaegu', cursive;
+          clear: both;
+          height: 50px;
+          width: 1500px;
+          background-color: rgb(0, 216, 255);
+          color: white;
+          text-align: center;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          font-size: 40px;
+          border-radius: 20px;
+        }
+        .ulalign{
+          margin: 0 70px;
+        }
+        .dropdown{
+          display: inline-block;    /*옆으로 보여짐*/
+        }
+        .dropdownContents{
+          color: white;
+          font-family: sans-serif;
+          display: none;
+          background-color: rgb(0, 216, 255);
+          position: absolute;
+          width: 220px;
+          padding: 12px 16px;
+          border-radius: 20px;
+          margin-left: -95px; 
+          font-size: 15px;
+        }
+        .dropdown:hover .dropdownContents{  /*커서를 가져갔을때 dropdownContents을 보여줌*/
+          display: block;
+        }
+        .td{
+            width: 120px;
+            height: 120px;
+            border-radius: 2px;
+        }
+        .pt{
+            background: -webkit-linear-gradient(#d687ff, #0027ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Gaegu', cursive;
+            margin-left: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .left{
+			      float: left;
+	     	}
+		    .right{
+			     float: right;
+			     margin-top: 60px;
+		    }
+		    #logo{
+            background: -webkit-linear-gradient(#d687ff, #0027ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-left: 30px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 50px;
+            margin-top: 20px;
+            float: left;
+        }
+		    #btn{
+			     width: 70px;
+			     height: 30px;
+			     border-radius: 5px;
+			     margin: 10px;
+		    }
+    </style>
+</head>
+<body>
+	<header>
+		<a href="index.html" class="left"><img src="./img/travel.jpg" width="100" height="100"></a>
+		<div id="logo">
+			일본 여행
+		</div>	
+		<div class="right">
+			<input type="text" name ="search"> 
+			<input type="button" value="검색하기" id="btn">	
+		
+	 	</div> <br><br><br><br>
+		<hr>
+	</header>
+
+  <nav id="menu">
+    <div class="dropdown">
+      <ul class="ulalign">도쿄
+        <div class="dropdownContents">
+        <li><a href="asakusa.html">아사쿠사</a></li><br>
+        <li><a href="shinjuku.html">신주쿠</a></li><br>
+        <li><a href="tokyo_tower.html">도쿄 타워</a></li>
+        </div>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <ul class="ulalign">오사카
+        <div class="dropdownContents">
+        <li><a href="osaka1.html">1일차!~!~!~!</a></li><br>
+        <li><a href="osaka2.html">2일차!~!~</a></li><br>
+        <li><a href="osaka3.html">3일차!~!</a></li>
+        </div>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <ul class="ulalign">후쿠오카
+        <div class="dropdownContents">
+        <li><a href="fukuoka1.html">모모치해변</a></li><br>
+        <li><a href="fukuoka2.html">라쿠스이엔</a></li><br>
+        <li><a href="fukuoka3.html">파르코</a></li><br>
+        <li><a href="fukuoka4.html">커낼시티</a></li>
+        </div>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="clear"></div> <!-- float 속성 해제 -->
+
+   <h1 id="h1">신주쿠 맛집,볼거리!</h1>
+   
+   	<center>
+   		<table border="1"> 
+   		<tr>
+       		<td><a href="img/shinjuku/shinjuku1.png" target="shinjuku"><img src="img/shinjuku/shinjuku1.png" class="td"></a></td>
+       		<td><a href="img/shinjuku/shinjuku2.png" target="shinjuku"><img src="img/shinjuku/shinjuku2.png" class="td"></a></td>
+       		<td><a href="img/shinjuku/shinjuku2_1.png" target="shinjuku"><img src="img/shinjuku/shinjuku2_1.png" class="td"></td>
+      		<td><a href="img/shinjuku/shinjuku3.png" target="shinjuku"><img src="img/shinjuku/shinjuku3.png" class="td"></td>
+       		<td><a href="img/shinjuku/shinjuku4.png" target="shinjuku"><img src="img/shinjuku/shinjuku4.png" class="td"></td>
+       		<td><a href="img/shinjuku/shinjuku4_1.png" target="shinjuku"><img src="img/shinjuku/shinjuku4_1.png" class="td"></td>
+       		<td><a href="img/shinjuku/shinjuku5.png" target="shinjuku"><img src="img/shinjuku/shinjuku5.png" class="td"></td>
+       		<td><a href="img/shinjuku/shinjuku5_1.png" target="shinjuku"><img src="img/shinjuku/shinjuku5_1.png" class="td"></td>
+   	 	</tr>
+   	 	<tr>
+       		<td class="pt">우동신</td>
+       		<td colspan="2" class="pt">에비소바 이치겐</td>
+      		<td class="pt">라멘 타츠노야</td>
+       		<td colspan="2" class="pt">다카시마야 타임스 스퀘어</td>
+       		<td colspan="2" class="pt">뉴우먼 </td>
+   	 	</tr>
+    	<tr>
+       		<td><a href="img/shinjuku/shinjuku6.png" target="shinjuku"><img src="img/shinjuku/shinjuku6.png" class="td"></a></td>
+       		<td><a href="img/shinjuku/shinjuku7.png" target="shinjuku"><img src="img/shinjuku/shinjuku7.png" class="td"></a></td>
+       		<td><a href="img/shinjuku/shinjuku7_1.png" target="shinjuku"><img src="img/shinjuku/shinjuku7_1.png" class="td"></td>
+      		<td><a href="img/shinjuku/shinjuku8.png" target="shinjuku"><img src="img/shinjuku/shinjuku8.png" class="td"></td>
+       		<td><a href="img/shinjuku/shinjuku8_1.png" target="shinjuku"><img src="img/shinjuku/shinjuku8_1.png" class="td"></td>
+       		<td><a href="img/shinjuku/shinjuku9.png" target="shinjuku"><img src="img/shinjuku/shinjuku9.png" class="td"></td>
+       		<td><a href="img/shinjuku/shinjuku9_1.png" target="shinjuku"><img src="img/shinjuku/shinjuku9_1.png" class="td"></td>
+       		<td><a href="img/shinjuku/shinjuku10.png" target="shinjuku"><img src="img/shinjuku/shinjuku10.png" class="td"></td>
+       	</tr>
+       	<tr>
+       		<td class="pt">이세탄 신주쿠점</td>
+       		<td colspan="2" class="pt">더 콘란 숍</td>
+      		<td colspan="2" class="pt">프랑프랑</td>
+       		<td colspan="2" class="pt">빔스 재팬</td>
+       		<td class="pt">기노쿠니야 서점</td>
+       	</tr>
+       
+
+  		</table>
+	</center>
+
+   <center>
+   	<iframe name="shinjuku" width="1000" height="800"></iframe>
+   </center>
+   <center>
+   	<a href="#h1">TOP</a>
+   </center>
+
+
+
+출처 : https://post.naver.com/viewer/postView.nhn?volumeNo=17721783&memberNo=25379965&vType=VERTICAL
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>오사카성</title>
+	<link href="https://fonts.googleapis.com/css?family=Gaegu|Nanum+Brush+Script|Nanum+Myeongjo|Nanum+Pen+Script|Noto+Sans+KR|Noto+Serif+KR&display=swap" rel="stylesheet">
+	<style type="text/css">
+		h1{
+            background: -webkit-linear-gradient(#d687ff, #0027ff);
+  			-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent;
+			font-family: 'Gaegu', cursive;
+			margin-left: 30px;
+			font-size: 50px;
+			margin-top: 20px;
+            text-align: center;
+        }
+        header{
+			width: 1500px;
+			height: 100px;
+			margin-top: 10px;
+		}
+		nav{
+			width: 1500px;
+			height: 70px;
+			margin-top: 10px;
+		}
+		li{
+			list-style-type: none;
+		}
+		a{
+			text-decoration: none;	
+		}
+		li a{
+			font-family: 'Gaegu', cursive;
+			color: white;
+			font-size: 35px;
+		}
+		#menu{
+			font-family: 'Gaegu', cursive;
+			clear: both;
+			height: 50px;
+			width: 1500px;
+			background-color: rgb(0, 216, 255);
+			color: white;
+			text-align: center;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			font-size: 40px;
+			border-radius: 20px;
+		}
+		.ulalign{
+			margin: 0 70px;
+		}
+		.dropdown{
+			display: inline-block;		/*옆으로 보여짐*/
+		}
+		.dropdownContents{
+			color: white;
+			font-family: sans-serif;
+			display: none;
+			background-color: rgb(0, 216, 255);
+			position: absolute;
+			width: 220px;
+			padding: 12px 16px;
+			border-radius: 20px;
+			margin-left: -95px; 
+			font-size: 15px;
+		}
+		.dropdown:hover .dropdownContents{	/*커서를 가져갔을때 dropdownContents을 보여줌*/
+			display: block;
+		}
+		.clear{
+			clear: both;
+		}
+		
+		.left{
+			float: left;
+		}
+		.right{
+			float: right;
+			margin-top: 60px;
+		}
+		#logo{
+			background: -webkit-linear-gradient(#d687ff, #0027ff);
+  			-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent;
+			margin-left: 30px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-size: 50px;
+			margin-top: 20px;
+			float: left;
+		}
+		#btn{
+			width: 70px;
+			height: 30px;
+			border-radius: 5px;
+			margin: 10px;
+		}
+		.img{
+			border-radius: 20px;
+			margin-left: 60px;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<header>
+		<a href="index.html" class="left"><img src="./img/travel.jpg" width="100" height="100"></a>
+		<div id="logo">
+			일본 여행
+		</div>	
+		<div class="right">
+			<input type="text" name ="search"> 
+			<input type="button" value="검색하기" id="btn">	
+		
+	 	</div> <br><br><br><br>
+		<hr>
+	</header>
+
+	<nav id="menu">
+		<div class="dropdown">
+			<ul class="ulalign">도쿄
+				<div class="dropdownContents">
+				<li><a href="asakusa.html">아사쿠사</a></li><br>
+				<li><a href="shinjuku.html">신주쿠</a></li><br>
+				<li><a href="tokyo_tower.html">도쿄 타워</a></li>
+				</div>
+			</ul>
+		</div>
+		<div class="dropdown">
+			<ul class="ulalign">오사카
+				<div class="dropdownContents">
+				<li><a href="osaka1.html">1일차!~!~!~!</a></li><br>
+				<li><a href="osaka2.html">2일차!~!~</a></li><br>
+				<li><a href="osaka3.html">3일차!~!</a></li>
+				</div>
+			</ul>
+		</div>
+		<div class="dropdown">
+			<ul class="ulalign">후쿠오카
+				<div class="dropdownContents">
+				<li><a href="fukuoka1.html">모모치해변</a></li><br>
+				<li><a href="fukuoka2.html">라쿠스이엔</a></li><br>
+				<li><a href="fukuoka3.html">파르코</a></li><br>
+				<li><a href="fukuoka4.html">커낼시티</a></li>
+				</div>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="clear"></div> <!-- float 속성 해제 -->
+
+	<h1>2일차!</h1>
+
+	<img src="img/osaka2/osaka1.jpg" class="img" width="300px" height="200px">
+	<img src="img/osaka2/osaka2.jpg" class="img" width="300px" height="200px">
+	<img src="img/osaka2/osaka3.jpg" class="img" width="300px" height="200px">
+	<img src="img/osaka2/osaka4.jpg" class="img" width="300px" height="200px">
+	<img src="img/osaka2/osaka5.jpg" class="img" width="300px" height="200px">
+	<img src="img/osaka2/osaka6.jpg" class="img" width="300px" height="200px">
+	<img src="img/osaka2/osaka7.jpg" class="img" width="300px" height="200px">
+	<img src="img/osaka2/osaka8.jpg" class="img" width="300px" height="200px">
+	<img src="img/osaka2/osaka9.jpg" class="img" width="300px" height="200px">
+	<p>
+
+	띠롱!
+
+	<a href="osaka3.html">다음</a><br>
+
+[출처] 헵파이브 홈페이지 http://www.hepfive.co.kr/﻿ 
+</body>
+</html>
